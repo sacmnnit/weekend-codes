@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from WocLanding.views import (home,test)
+from WocLanding.views import (home,test,contact)
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',home, name='home'),
+    url(r'^contact/$',contact, name='contact'),
     url(r'^test/$',test, name='test'),    
 ]
