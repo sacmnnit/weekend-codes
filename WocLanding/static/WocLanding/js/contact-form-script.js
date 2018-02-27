@@ -16,14 +16,19 @@ function submitForm(){
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();
+    var csrf = $("#csrf").attr("csrf");
+
+    // console.log('its data going'+name+ " and csrf :"+csrf)
 
     $.ajax({
-        type: "POST",
-        url: "../php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&message=" + message,
+        url: "/contact/",
+        type: "post",
+        data: "name=" + name + "&email=" + email + "&message=" + message+"&csrfmiddlewaretoken="+csrf, 
+        // data: $("form-submit").serialize(),
+        cache:false,
         success : function(text){
             if (text == "success"){
-                formSuccess();
+                formSuccess(name);
             } else {
                 formError();
                 submitMSG(false,text);
@@ -32,9 +37,9 @@ function submitForm(){
     });
 }
 
-function formSuccess(){
+function formSuccess(name){
     $("#contactForm")[0].reset();
-    submitMSG(true, "Message Submitted!")
+    submitMSG(true, "It's good to hear from you "+name+".Thank you!")
 }
 
 function formError(){
@@ -49,5 +54,6 @@ function submitMSG(valid, msg){
     } else {
         var msgClasses = "h3 text-left text-danger";
     }
-    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+    // $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+    alert(msg);
 }
