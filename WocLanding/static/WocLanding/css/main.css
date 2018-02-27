@@ -494,6 +494,11 @@ fieldset[disabled] .btn {
   background-size: 100%;
   background-size: cover;
   z-index: 10;
+  opacity: 0.6;
+  min-width: 100%;
+}
+#carousel-area .carousel-inner .item {
+  min-width: 100%;
 }
 #carousel-area .carousel-inner .item .carousel-caption {
   top: 22%;
@@ -872,6 +877,12 @@ fieldset[disabled] .btn {
 }
 .column-1 .nav-pills ul > li.color-4:after {
   background: #4a5dcd;
+}
+.column-1 .nav-pills ul > li.color-5:after {
+  background: #00FF00;
+}
+.column-1 .nav-pills ul > li.color-6:after {
+  background: #8B4513;
 }
 .column-1 .nav-pills ul > li > a {
   background: #dddddd;

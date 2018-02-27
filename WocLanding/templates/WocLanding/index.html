@@ -1,12 +1,13 @@
 {% load staticfiles %}
 
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Impression | Bootstrap HTML5 Conference and Event Template</title>
+<link rel="icon" type="image/png" href="{% static 'WocLanding/icons/tab_icon.png' %}">
+<title>WOC 2018 | MNNIT</title>
 
 <link rel="stylesheet" type="text/css" href="{% static 'WocLanding/css/bootstrap.min.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'WocLanding/css/main.css' %}">
@@ -41,44 +42,42 @@
         </button>
         <a class="navbar-brand" href="index.html"><img src="{% static 'WocLanding/img/logo1.png' %}" alt=""></a>
       </div>
-
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages <span class="caret"></span></a>
+        <li class="active"><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="#event">About Us</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li class="animated bounceIn"><a href="https://weekendofcode.herokuapp.com/">Register</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="pricing.html">Pricing Table</a></li>
-          <li><a href="sponsors.html">Sponsors</a></li>
-          <li><a href="single-post.html">Single Post</a></li>
+          <li><a href="http://mnnit.ac.in/">MNNIT</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="https://weekendofcode.herokuapp.com/">Register</a></li>
+          <li><a href="#map">Contact Us</a></li>
         </ul>
         </li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="speakers.html">Speakers</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li class="animated bounceIn"><a href="pricing.html">Buy Tickets</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
     </div>
 
       <ul class="wpb-mobile-menu">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="#">Pages</a>
+        <li class="active"><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="#event">About Us</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li class="animated bounceIn"><a href="https://weekendofcode.herokuapp.com/">Register</a></li>
+         </li>
+        <li><a href="#">More</a>
         <ul class="dropdown">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="pricing.html">Pricing Table</a></li>
-          <li><a href="sponsors.html">Sponsors</a></li>
-          <li><a href="single-post.html">Single Post</a></li>
+          <li><a href="http://mnnit.ac.in/">MNNIT</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="https://weekendofcode.herokuapp.com/">Register</a></li>
+          <li><a href="#map">Contact Us</a></li>
         </ul>
         </li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="speakers.html">Speakers</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="pricing.html">Buy Tickets</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
   </nav>
 </div>
@@ -89,10 +88,10 @@
   <div id="carousel-slider" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="{% static 'WocLanding/img/slider/bg-1.jpg' %}" alt="">
+        <img src="{% static 'WocLanding/img/slider/bg-1.jpg' %}" alt="" style="min-width: 100%; max-height:600px;">
         <div class="carousel-caption">
-          <h2 class="wow fadeInRight" data-wow-delay="300ms">Impression - Startup Event<br> Join us be The First to Book Your Ticket</h2>
-          <div class="buttons wow fadeInDown" data-wow-delay="0.2s"><a class="btn btn-lg btn-border" href="#">Registration</a></div>
+          <h2 class="wow fadeInRight" data-wow-delay="300ms">WOC 2018 - DevJam+CodeStart<br> Join us be There to hack the code</h2>
+          <div class="buttons wow fadeInDown" data-wow-delay="0.2s"><a class="btn btn-lg btn-border" href="https://weekendofcode.herokuapp.com/">Registration</a></div>
           <a data-scroll href="#featured">
           <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
           <span></span>
@@ -101,11 +100,11 @@
         </div>
       </div>
       <div class="item">
-        <img src="{% static 'WocLanding/img/slider/bg-2.jpg' %}" alt="">
+        <img src="{% static 'WocLanding/img/slider/bg-2.jpg' %}" alt="" style="min-width: 100%; max-height:600px;">
         <div class="carousel-caption">
-          <h2 class="wow fadeInUp" data-wow-delay="300ms">Opportunity to showcase<br> your product and services to attendees</h2>
+          <h2 class="wow fadeInUp" data-wow-delay="300ms">Opportunity to showcase<br> your Hacks to World</h2>
           <div class="buttons">
-          <a class="btn btn-lg btn-common wow fadeInLeft" data-wow-delay="300ms" href="#">Buy Tickets</a>
+          <a class="btn btn-lg btn-common wow fadeInLeft" data-wow-delay="300ms" href="#gallery">Galler</a>
           <a class="btn btn-lg btn-border wow fadeInRight" data-wow-delay="300ms" href="#">Know More</a>
           </div>
           <a data-scroll href="#featured">
@@ -137,14 +136,14 @@
   </div>
 </div>
 
-<section class="countdown-timer section">
+<section class="countdown-timer section" id="countdown">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
         <div class="text">
-          <h2>Impression <br>Startup Event</h2>
-          <h4>Marriott Marquis, San Francisco, CA <br> Jan 25, 2018 - Jan 28, 2018 </h4>
-          <a href="pricing.html" class="btn btn-lg btn-common">Buy Tickets</a>
+          <h2>WOC 1.0<br>DevJam+CodeStart</h2>
+          <h4>Telyarganj, MNNIT Allahabad, UP <br> March 29, 2018 - APRIL 01, 2018 </h4>
+          <a href="https://weekendofcode.herokuapp.com/" class="btn btn-lg btn-common">Register</a>
         </div>
       </div>
       <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.2s">
@@ -167,7 +166,7 @@
       </div>
       <div class="desc">
       <h4>Location</h4>
-      <p>Marriott Marquis, San Francisco</p>
+      <p>Telyarganj, MNNIT Allahabad, UP</p>
       </div>
       </div>
     </div>
@@ -178,7 +177,7 @@
       </div>
       <div class="desc">
       <h4>Date & Time</h4>
-      <p>1PM - 11PM, 25- 28 Jan</p>
+      <p>March 29, 2018 - APRIL 01, 2018 </p>
       </div>
       </div>
     </div>
@@ -199,15 +198,27 @@
       <i class="icon-wallet"></i>
       </div>
       <div class="desc left">
-      <h4>Tickets</h4>
+      <h4>Registration</h4>
       <p>150 People</p>
       </div>
       </div>
     </div>
     <div class="col-md-12">
       <div class="content-text">
-      <h3 class="wow fadeInUp" data-wow-delay="0.8s">Get fresh insights into the world of tech and startups</h3>
-      <p class="wow fadeInUp" data-wow-delay="1s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A enean massa. Cum sociis natoque penatibus et magnis dis parturient montes Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      <h3 class="wow fadeInUp" data-wow-delay="0.8s">Get fresh insights into the world of Programming and Development</h3>
+      <p class="wow fadeInUp" data-wow-delay="1s">
+      WEEKEND OF CODE is a joint initiative of B.Tech final and pre-final year students to provide the freshers an exposure to the world of competitive programming alongwith a glimpse of software development. The Weekend Of Code basically consists of two events:<br>
+      <ul>
+        <li style="list-style: number;">
+          <span style="color:white; font-size: 20px;">CodeStart: </span> CodeStart is a 3 hours ACM-ICPC styled onsite coding contest. The event aims at providing freshers an experience equivalent to participating in international coding event.          
+        </li>
+        <li style="list-style: number;">
+          <span style="color:white; font-size: 20px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DevJam: </span>  DevJam  is 24 hour onsite development event which aims at familiarising the freshers with the latest frameworks and technologies in IT industry.
+          This event will allow the freshers to learn new technologies and will groom them for participating in various national and international events and thus,  take the name of college to new heights.          
+        </li>
+      </ul>
+
+      </p>
       </div>
     </div>
     </div>
@@ -219,16 +230,21 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-    <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Why Join</h2>
-    <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A <br> enean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+    <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Why WOC</h2>
+    <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">
+    Near 20 teams applied for Hack36 but only 2 of them got the <br>
+    chance to participate in the main event due the wide participation of teams from<br> other colleges. This wide participation of the first year students depicts their enthusiasm<br>
+    and inclination towards development activities.<br>After not getting a chance in Hack36 they felt
+    a little discouraged. This event is an attempt<br> to motivate them to continue their zest to learn and develop more. </p>
     <div class="col-md-4 col-sm-6">
       <div class="featured-box wow fadeInLeft" data-wow-delay="0.1s">
       <div class="icon">
       <i class="icon-energy"></i>
       </div>
       <div class="featured-content">
-      <h4>Get Inspired</h4>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque </p>
+      <h4>Google Summer Of Code</h4>
+      <p>The best time to make the students aware about the procedure of preparation and selection for such kind of programmes is the first year. GSoC is a great opportunity for students to contribute to open source . 
+    </p>
       </div>
       </div>
     </div>
@@ -238,8 +254,8 @@
       <i class="icon-people"></i>
       </div>
       <div class="featured-content">
-      <h4>Meet New Faces</h4>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque </p>
+      <h4>Practice For ACM ICPC</h4>
+      <p>The ACM-ICPC is considered as the "Olympics of Programming Competitions". It is quite simply, the oldest, largest, and most prestigious international level programming contest. MNNIT is good , we need to make it best.</p>
       </div>
       </div>
     </div>
@@ -249,8 +265,9 @@
       <i class="icon-graph"></i>
       </div>
       <div class="featured-content">
-      <h4>Fresh Tech Insights</h4>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque </p>
+      <h4>Betterment of  Placement Statistics</h4>
+      <p>CodeStart and DevJam will help them improve their algorithmic skills and expanding their development skill for for companies. This will reflect in the placement statistics of the college.
+    </p>
       </div>
       </div>
     </div>
@@ -264,250 +281,215 @@
 <div class="container">
 <div class="row">
 <div class="col-md-12">
-<h2 class="section-title wow fadeInUp" data-wow-delay="0s">Schedule</h2>
-<p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A <br> enean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+  <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Schedule</h2>
+  <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">WOC 1.0 is scheduled to occur from March 29, 2018 to APRIL 01, 2018<br> Find below the details of events for each day.</p>
 
-<div class="main-board wow fadeInDown" data-wow-delay="0.3s">
+  <div class="main-board wow fadeInDown" data-wow-delay="0.3s">
 
-<ul class="nav nav-tabs day" role="tablist">
-<li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">25 JAN <br> <span>DAY 01</span></a></li>
-<li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">26 JAN <br> <span>DAY 02</span> </a></li>
-<li role="presentation"><a href="#day3" aria-controls="day3" role="tab" data-toggle="tab">27 JAN <br> <span>DAY 03</span></a></li>
-<li role="presentation"><a href="#day4" aria-controls="day4" role="tab" data-toggle="tab">28 JAN <br> <span>DAY 04</span></a></li>
-</ul>
+  <ul class="nav nav-tabs day" role="tablist">
+    <li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab"> M 29th <br> <span>DAY 01</span></a></li>
+    <li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">M 30th <br> <span>DAY 02</span> </a></li>
+    <li role="presentation"><a href="#day3" aria-controls="day3" role="tab" data-toggle="tab">M 31st <br> <span>DAY 03</span></a></li>
+    <li role="presentation"><a href="#day4" aria-controls="day4" role="tab" data-toggle="tab">A 1st <br> <span>DAY 04</span></a></li>
+  </ul>
 
-<div class="tab-content">
+  <div class="tab-content">
 
-<div role="tabpanel" class="tab-pane active" id="day1">
-<div class="row">
-<div class="col-md-12 board text-center">
-<div class="column-1 col-md-3 col-sm-5">
-<ul class="nav nav-pills event-time-list">
-<li><a href="#">Time</a>
-<ul>
-<li class="color-1"><a href="#">8am - 12 pm</a></li>
-<li class="color-2"><a href="#">12pm - 1 pm</a></li>
-<li class="color-3"><a href="#">1pm - 1.30 pm</a></li>
-<li class="color-4"><a href="#">2pm - 3 pm</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="col-md-4 col-sm-6">
-<div class="member stephen">
-<div class="button">
-<a href="#" class="btn-large bg-1"><img src="{% static 'WocLanding/img/microphone.png' %}" alt=""> Stephen Curry</a>
-</div>
-<h4>Main Topic</h4>
-<p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-</div>
-<div class="member jeson">
-<div class="button">
-<a href="#" class="btn-large bg-2"><img src="{% static 'WocLanding/img/microphone.png' %}" alt=""> Jeson Holde</a>
-</div>
-<h4>Main Topic</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-</div>
-</div>
-<div class="col-md-1 col-sm-1">
-<div class="coffee">
-<div class="coffee-icon">
-<img src="{% static 'WocLanding/img/coffee-cup.png' %}" alt="">
-</div>
-<p>
-C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
-</p>
-</div>
-</div>
-<div class="col-md-4 col-sm-12">
-<div class="member jon">
-<div class="button">
-<a href="#" class="btn-large bg-3"><img src="{% static 'WocLanding/img/microphone.png' %}" alt=""> Jone Doe</a>
-</div>
-<h4>Main Topic</h4>
-<p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-<p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-<p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div role="tabpanel" class="tab-pane" id="day2">
-<div class="row">
-<div class="col-md-12 board text-center">
-<div class="column-1 col-md-3 col-sm-5">
-<ul class="nav nav-pills event-time-list">
-<li><a href="#">Time</a>
-<ul>
-<li class="color-1"><a href="#">10am - 12pm</a></li>
-<li class="color-2"><a href="#">12pm - 2pm</a></li>
-<li class="color-3"><a href="#">2pm - 3pm</a></li>
-<li class="color-4"><a href="#">3pm - 5pm</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="col-md-4 col-sm-6">
-<div class="member stephen">
-<div class="button">
-<a href="#" class="btn-large bg-1"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">Bushra Ahsani</a>
-</div>
-<h4>Main Topic</h4>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-</div>
-<div class="member jeson">
-<div class="button">
-<a href="#" class="btn-large bg-2"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">John Berry</a>
-</div>
-<h4>Main Topic</h4>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-</div>
-</div>
-<div class="col-md-1 col-sm-1">
-<div class="coffee">
-<div class="coffee-icon">
-<img src="{% static 'WocLanding/img/coffee-cup.png' %}" alt="">
-</div>
-<p>
-C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
-</p>
-</div>
-</div>
-<div class="col-md-4 col-sm-12">
-<div class="member jon">
-<div class="button">
-<a href="#" class="btn-large bg-3"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">Martin Jones</a>
-</div>
-<h4>Main Topic</h4>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <div role="tabpanel" class="tab-pane active" id="day1">
+  <div class="row">
+  <div class="col-md-12 board text-center">
+  <div class="column-1 col-md-3 col-sm-5">
+  <ul class="nav nav-pills event-time-list">
+    <li><a href="#">Time</a>
+    <ul>
+      <li class="color-1"><a href="#">3:00 PM DevJam begins</a></li>
+      <li class="color-2"><a href="#">6:30 PM Evening Snacks</a></li>
+      <li class="color-3"><a href="#">8:30 PM Dinner</a></li>
+    </ul>
+    </li>
+  </ul>
+  </div>
+  <div class="col-md-4 col-sm-6">
+    <div class="member stephen">
+    <div class="button">
+      <a href="#" class="btn-large bg-1"><img src="{% static 'WocLanding/img/microphone.png' %}" alt=""> Kick-Start </a>
+    </div>
+    <h4>Lets start @3PM</h4>
+    <p>Week Of Code kickstarts (DevJam Event)</p>
+    </div>
+    <div class="member jeson">
+      <div class="button">
+      <a href="#" class="btn-large bg-2"><img src="{% static 'WocLanding/img/microphone.png' %}" alt=""> Evening snacks</a>
+      </div>
+      <h4>Snacks Time @6:30PM</h4>
+      <p>Lets have some snacks</p>
+    </div>
+  </div>
+  <div class="col-md-1 col-sm-1">
+    <div class="coffee">
+      <div class="coffee-icon">
+        <img src="{% static 'WocLanding/img/coffee-cup.png' %}" alt="">
+      </div>
+      <p>
+      D <br> I <br> N <br> N <br>E <br>R <br> <br> @ <br> 8:30<br>PM
+      </p>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-12">
+    <div class="member jon">
+    <div class="button">
+      <a href="#" class="btn-large bg-3"><img src="{% static 'WocLanding/img/microphone.png' %}" alt=""> CodeMode on</a>
+    </div>
+    <h4>Here's what you are expected to do </h4>
+    <p>We will be watching commits by all teams.</p>
+    <p>Make regular commits.</p>
+    <p>Ask if there is any doubt.</p>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
 
 
-<div role="tabpanel" class="tab-pane" id="day3">
-<div class="row">
-<div class="col-md-12 board text-center">
-<div class="column-1 col-md-3 col-sm-5">
-<ul class="nav nav-pills event-time-list">
-<li><a href="#">Time</a>
-<ul>
-<li class="color-1"><a href="#">8am - 12 pm</a></li>
-<li class="color-2"><a href="#">12pm - 1 pm</a></li>
-<li class="color-3"><a href="#">1pm - 1.30 pm</a></li>
-<li class="color-4"><a href="#">2pm - 3 pm</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="col-md-4 col-sm-6">
-<div class="member stephen">
-<div class="button">
-<a href="#" class="btn-large bg-1"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">Jon Doe</a>
-</div>
-<h4>Main Topic</h4>
-<p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-</div>
-<div class="member jeson">
-<div class="button">
-<a href="#" class="btn-large bg-2"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">Leo Amber</a>
-</div>
-<h4>Main Topic</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-</div>
-</div>
-<div class="col-md-1 col-sm-1">
-<div class="coffee">
-<div class="coffee-icon">
-<img src="{% static 'WocLanding/img/coffee-cup.png' %}" alt="">
-</div>
-<p>
-C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
-</p>
-</div>
-</div>
-<div class="col-md-4 col-sm-12">
-<div class="member jon">
-<div class="button">
-<a href="#" class="btn-large bg-3"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">Natali Aero</a>
-</div>
-<h4>Main Topic</h4>
-<p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-<p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-<p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <div role="tabpanel" class="tab-pane" id="day2">
+  <div class="row">
+  <div class="col-md-12 board text-center">
+  <div class="column-1 col-md-3 col-sm-5">
+    <ul class="nav nav-pills event-time-list">
+      <li><a href="#">Time</a>
+      <ul>
+        <li class="color-1"><a href="#">2AM Midnight snacks</a></li>
+        <li class="color-2"><a href="#">8AM Breakfast</a></li>
+        <li class="color-3"><a href="#">12PM Lunch</a></li>
+        <li class="color-4"><a href="#">2:30PM Evaluation round</a></li>
+        <li class="color-5"><a href="#">4:30PM Final presentation by top teams</a></li>
+        <li class="color-6"><a href="#">5:30PM Result Announcement</a></li>
+      </ul>
+      </li>
+    </ul>
+  </div>
 
 
-<div role="tabpanel" class="tab-pane" id="day4">
-<div class="row">
-<div class="col-md-12 board text-center">
-<div class="column-1 col-md-3 col-sm-5">
-<ul class="nav nav-pills event-time-list">
-<li><a href="#">Time</a>
-<ul>
-<li class="color-1"><a href="#">3pm - 5pm</a></li>
-<li class="color-2"><a href="#">5pm - 7pm</a></li>
-<li class="color-3"><a href="#">7pm - 7.30 pm</a></li>
-<li class="color-4"><a href="#">8pm - 10pm</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="col-md-4 col-sm-6">
-<div class="member stephen">
-<div class="button">
-<a href="#" class="btn-large bg-1"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">Julia Merry</a>
-</div>
-<h4>Main Topic</h4>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-</div>
-<div class="member jeson">
-<div class="button">
-<a href="#" class="btn-large bg-2"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">Jeson Eva</a>
-</div>
-<h4>Main Topic</h4>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-</div>
-</div>
-<div class="col-md-1 col-sm-1">
-<div class="coffee">
-<div class="coffee-icon">
-<img src="{% static 'WocLanding/img/coffee-cup.png' %}" alt="">
-</div>
-<p>
-C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
-</p>
-</div>
-</div>
-<div class="col-md-4 col-sm-12">
-<div class="member jon">
-<div class="button">
-<a href="#" class="btn-large bg-3"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">David Ramon</a>
-</div>
-<h4>Main Topic</h4>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="col-md-4 col-sm-6">
+    <div class="member stephen">
+    <div class="button">
+      <a href="#" class="btn-large bg-1"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">Evaluation round</a>
+    </div>
+      <h4>Evaluation @2:30PM</h4>
+      <p>We will be going through the progress you made. By this time you must have some working stuff.</p>
+    </div>
+    <div class="member jeson">
+      <div class="button">
+      <a href="#" class="btn-large bg-2"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">Final presentation</a>
+      </div>
+      <h4>Final presentation by top teams @4:30PM</h4>
+      <p>Now the selected top teams will be presenting their hacks t.</p>
+    </div>
+  </div>
+  <div class="col-md-1 col-sm-1">
+    <div class="coffee">
+    <p>
+    @5:30<br>PM<br><br>R <br>E <br> S <br> U <br>L <br>T <br> <br> T <br> I <br> M <br> E <br> 
+    </p>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-12">
+    <div class="member jon">
+    <div class="button">
+      <a href="#" class="btn-large bg-3"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">Results</a>
+    </div>
+    <h4>Result Announcement @5:30PM</h4>
+    <p>Finally the results will be declared at 5:30 PM.</p>
+    <p>Winners will get their Prizes.</p>
+    <p>All Participants can get their certificates now.</p>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
 
-</div>
 
-</div>
+  <div role="tabpanel" class="tab-pane" id="day3">
+  <div class="row">
+  <div class="col-md-12 board text-center">
+
+
+  <div class="col-md-4 col-sm-12 col-md-offset-4 center">
+    <div class="member jon">
+    <div class="button">
+      <a href="#" class="btn-large bg-3"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">Rest day</a>
+    </div>
+      <h4>Free Time</h4>
+      <p>You get a day gap after a sleepless night.</p>
+      <p>Be ready for next codeWar.</p>
+      <p>CodeStart on its way.</p>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  <div role="tabpanel" class="tab-pane" id="day4">
+  <div class="row">
+  <div class="col-md-12 board text-center">
+    <div class="column-1 col-md-3 col-sm-5">
+      <ul class="nav nav-pills event-time-list">
+      <li><a href="#">Time</a>
+        <ul>
+          <li class="color-1"><a href="#">1:30PM Welcome in contest Arena</a></li>
+          <li class="color-2"><a href="#">2:00PM CodeStart Begins</a></li>
+          <li class="color-3"><a href="#">3:30PM Snacks</a></li>
+          <li class="color-4"><a href="#">5:30PM CodeStart Ends</a></li>
+          <li class="color-5"><a href="#">6:30PM Prize Distribution</a></li>
+        </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="member stephen">
+      <div class="button">
+      <a href="#" class="btn-large bg-1"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">Contest Arena</a>
+      </div>
+      <h4>Entry in contest Arena @1:30PM</h4>
+      <p>Candidates can now start entering in the contest Arena.(CC)</p>
+      </div>
+      <div class="member jeson">
+        <div class="button">
+        <a href="#" class="btn-large bg-2"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">War Begins</a>
+        </div>
+        <h4>CodeStart begins @2:00PM</h4>
+        <p>Time starts now, All candidates start solving problems.</p>
+      </div>
+    </div>
+    <div class="col-md-1 col-sm-1">
+      <div class="coffee">
+      <div class="coffee-icon">
+      <img src="{% static 'WocLanding/img/coffee-cup.png' %}" alt="">
+      </div>
+      <p>
+      @3:30<br>PM<br><br>S <br> N <br> A <br> C <br>K <br>S
+      </p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="member jon">
+      <div class="button">
+      <a href="#" class="btn-large bg-3"><img src="{% static 'WocLanding/img/microphone.png' %}" alt="">Prizes</a>
+      </div>
+      <h4>Prize Distribution @5:30</h4>
+      <p>Now we have winners of CodeStart.</p>
+      <p>All Participants get participation certificates.</p>
+      <p>Winners get special prizes.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  </div>
+
+  </div>
 
 </div>
 </div>
@@ -517,32 +499,32 @@ C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
 
 <section id="sponsors" class="section">
 <div class="container">
-<div class="row">
-<div class="col-md-12">
-<h2 class="section-title wow fadeInUp" data-wow-delay="0s">Our Sponsors</h2>
-<p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A <br> enean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-</div>
-<div class="col-md-3 col-sm-6 col-xs-12">
-<div class="spnsors-logo wow fadeInUp" data-wow-delay="0.1s">
-<a href="#"><img src="{% static 'WocLanding/img/sponsors/logo-01.png' %}" alt=""></a>
-</div>
-</div>
-<div class="col-md-3 col-sm-6 col-xs-12">
-<div class="spnsors-logo wow fadeInUp" data-wow-delay="0.2s">
-<a href="#"><img src="{% static 'WocLanding/img/sponsors/logo-02.png' %}" alt=""></a>
-</div>
-</div>
-<div class="col-md-3 col-sm-6 col-xs-12">
-<div class="spnsors-logo wow fadeInUp" data-wow-delay="0.3s">
-<a href="#"><img src="{% static 'WocLanding/img/sponsors/logo-03.png' %}" alt=""></a>
-</div>
-</div>
-<div class="col-md-3 col-sm-6 col-xs-12">
-<div class="spnsors-logo wow fadeInUp" data-wow-delay="0.4s">
-<a href="#"><img src="{% static 'WocLanding/img/sponsors/logo-04.png' %}" alt=""></a>
-</div>
-</div>
-</div>
+  <div class="row">
+  <div class="col-md-12">
+    <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Our Sponsors</h2>
+    <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Come and join Us.<br> Be the next Sponsor.</p>
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.1s">
+    <a href="#"><img src="{% static 'WocLanding/img/sponsors/logo-01.png' %}" alt=""></a>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.2s">
+    <a href="#"><img src="{% static 'WocLanding/img/sponsors/logo-02.png' %}" alt=""></a>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.3s">
+    <a href="#"><img src="{% static 'WocLanding/img/sponsors/logo-03.png' %}" alt=""></a>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.4s">
+    <a href="#"><img src="{% static 'WocLanding/img/sponsors/logo-04.png' %}" alt=""></a>
+    </div>
+  </div>
+  </div>
 </div>
 </section>
 
@@ -551,7 +533,7 @@ C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
 <div class="container">
 <div class="col-md-12">
 <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Our Gallery</h2>
-<p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A <br> enean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+<p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">There are some pictures from our newly started Hackathon Hack36 <br> This will motivate you to attend WOC.</p>
 </div>
 <div class="gallery-wrap wow fadeInDown">
 <div class="col-md-4 col-sm-4 col-xs-12 gellery-pn">
@@ -624,7 +606,7 @@ C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
 </div>
 </div>
 <div class="more-btn">
-<a href="gallery.html" class="btn btn-common wow fadeInUp" data-wow-delay="0.3s">show more</a>
+<a href="https://www.facebook.com/hack36mnnit/" class="btn btn-common wow fadeInUp" data-wow-delay="0.3s">show more</a>
 </div>
 </div>
 </div>
@@ -636,125 +618,70 @@ C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
 <div class="row">
 <div class="col-md-12">
 <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Meet Our Speakers</h2>
-<p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A <br> enean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+<p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">We have got some cool people on WOC day they will surely inspire you to hack more.<br></p>
 </div>
 <div class="col-md-4 col-sm-6 col-xs-12">
-<div class="speakers-member wow fadeIn" data-wow-delay="0.1s">
-<div class="member-img">
-<img src="{% static 'WocLanding/img/teacher/img-1.png' %}" alt="">
-</div>
-<div class="member-desc">
-<h3>Jon Doe</h3>
-<h5>CEO, Peloton Cycle</h5>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-<div class="social-icon">
-<a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-4 col-sm-6 col-xs-12">
-<div class="speakers-member wow fadeIn" data-wow-delay="0.3s">
-<div class="member-img">
-<img src="{% static 'WocLanding/img/teacher/img-2.png' %}" alt="">
-</div>
-<div class="member-desc">
-<h3>Natali Aero</h3>
-<h5>Co-founder, Hometeam</h5>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-<div class="social-icon">
-<a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-</div>
-</div>
-</div>
+  <div class="speakers-member wow fadeIn" data-wow-delay="0.1s">
+  <div class="member-img">
+    <img src="{% static 'WocLanding/img/teacher/img-1.png' %}" alt="">
+  </div>
+  <div class="member-desc">
+    <h3>Jon Doe</h3>
+    <h5>CEO, Peloton Cycle</h5>
+    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+    <div class="social-icon">
+      <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
+      <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
+    </div>
+  </div>
+  </div>
 </div>
 <div class="col-md-4 col-sm-6 col-xs-12">
-<div class="speakers-member wow fadeIn" data-wow-delay="0.5s">
-<div class="member-img">
-<img src="{% static 'WocLanding/img/teacher/img-3.png' %}" alt="">
-</div>
-<div class="member-desc">
-<h3>Leo Amber</h3>
-<h5>Director, Via</h5>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-<div class="social-icon">
-<a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-4 col-sm-6 col-xs-12">
-<div class="speakers-member wow fadeIn" data-wow-delay="0.7s">
-<div class="member-img">
-<img src="{% static 'WocLanding/img/teacher/img-4.png' %}" alt="">
-</div>
-<div class="member-desc">
-<h3>Jeson Eva</h3>
-<h5>Co-founder, theSkimm</h5>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-<div class="social-icon">
-<a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-</div>
-</div>
-</div>
+  <div class="speakers-member wow fadeIn" data-wow-delay="0.3s">
+    <div class="member-img">
+      <img src="{% static 'WocLanding/img/teacher/img-2.png' %}" alt="">
+    </div>
+    <div class="member-desc">
+    <h3>Natali Aero</h3>
+    <h5>Co-founder, Hometeam</h5>
+    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+    <div class="social-icon">
+      <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
+      <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
+    </div>
+    </div>
+  </div>
 </div>
 <div class="col-md-4 col-sm-6 col-xs-12">
-<div class="speakers-member wow fadeIn" data-wow-delay="0.9s">
-<div class="member-img">
-<img src="{% static 'WocLanding/img/teacher/img-5.png' %}" alt="">
+  <div class="speakers-member wow fadeIn" data-wow-delay="0.5s">
+    <div class="member-img">
+      <img src="{% static 'WocLanding/img/teacher/img-3.png' %}" alt="">
+    </div>
+    <div class="member-desc">
+    <h3>Leo Amber</h3>
+    <h5>Director, Via</h5>
+    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
+    <div class="social-icon">
+      <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
+      <a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
+    </div>
+    </div>
+  </div>
 </div>
-<div class="member-desc">
-<h3>Lamba Kureshi</h3>
-<h5>Professor, Boston University</h5>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-<div class="social-icon">
-<a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-4 col-sm-6 col-xs-12">
-<div class="speakers-member wow fadeIn" data-wow-delay="1s">
-<div class="member-img">
-<img src="{% static 'WocLanding/img/teacher/img-6.png' %}" alt="">
-</div>
-<div class="member-desc">
-<h3>Leo Amber</h3>
-<h5>CEO, lrisVR</h5>
-<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those intereste.</p>
-<div class="social-icon">
-<a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-behance"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="more-btn text-center">
-<a href="speakers.html" class="btn btn-common wow fadeInUp" data-wow-delay="0.3s">show more</a>
-</div>
+
+  <div class="more-btn text-center">
+  <a href="https://www.facebook.com/hack36mnnit/
+" class="btn btn-common wow fadeInUp" data-wow-delay="0.3s">show more</a>
+  </div>
 </div>
 </div>
 </section>
@@ -764,225 +691,164 @@ C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
 <div class="container">
 <div class="row">
 <div class="col-md-12">
-<h2 class="section-title wow fadeInUp" data-wow-delay="0s">Blog</h2>
-<p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A <br> enean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+  <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Blog</h2>
+  <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Have a look on some blogs by Us.<br>These blogs tell the journey of awesome Hackathons we witnessed.</p>
 </div>
 <div class="col-md-4 col-sm-6 col-xs-12">
-<div class="blog-item wow fadeInRight" data-wow-delay="0.2s">
-<div class="blog-image">
-<a href="#">
-<img src="{% static 'WocLanding/img/blog/img1.jpg' %}" alt="">
-</a>
-</div>
-<div class="blog-info">
-<h3><a href="single-post.html">We make beautiful days with older adults</a></h3>
-<div class="meta">
- <span class="meta-part"><a href="#"><i class="icon-eye"></i> 2500</a></span>
-<span class="meta-part"><a href="#"><i class="icon-bubble"></i> 100</a></span>
-<span class="meta-part"><a href="#"><i class="icon-calendar"></i> 21 Mar, 2016</a></span>
-</div>
-<p>Lorem ipsum dolor sit amet cons tetuer adipiscing elit. dolor sit...</p>
-</div>
-</div>
-</div>
-<div class="col-md-4 col-sm-6 col-xs-12">
-<div class="blog-item wow fadeInUp" data-wow-delay="0.2s">
-<div class="blog-image">
-<a href="#">
-<img src="{% static 'WocLanding/img/blog/img2.jpg' %}" alt="">
-</a>
-</div>
-<div class="blog-info">
-<h3><a href="single-post.html">Change-makers economic</a></h3>
-<div class="meta">
-<span class="meta-part"><a href="#"><i class="icon-eye"></i> 2500</a></span>
-<span class="meta-part"><a href="#"><i class="icon-bubble"></i> 100</a></span>
-<span class="meta-part"><a href="#"><i class="icon-calendar"></i> 21 Mar, 2016</a></span>
-</div>
-<p>Lorem ipsum dolor sit amet cons tetuer adipiscing elit. dolor sit...</p>
-</div>
-</div>
+  <div class="blog-item wow fadeInRight" data-wow-delay="0.2s">
+  <div class="blog-image">
+    <a href="#">
+    <img src="{% static 'WocLanding/img/blog/img1.jpg' %}" alt="">
+    </a>
+  </div>
+  <div class="blog-info">
+    <h3><a href="single-post.html"><a href="https://medium.freecodecamp.org/top-ideas-products-from-hack36-mnnits-first-hackathon-fecc37833d6e">Tushar Agarwal | Hack36</a></a></h3>
+    <div class="meta">
+      <span class="meta-part"><a href="#"><i class="icon-eye"></i> 2500</a></span>
+      <span class="meta-part"><a href="#"><i class="icon-bubble"></i> 100</a></span>
+      <span class="meta-part"><a href="#"><i class="icon-calendar"></i> 31 Jan, 2018</a></span>
+    </div>
+    <p>
+      <a href="https://medium.freecodecamp.org/top-ideas-products-from-hack36-mnnits-first-hackathon-fecc37833d6e">
+        We brought 25 universities together for one giant hackathon. Here are the top projects students built.
+      </a></p>
+  </div>
+  </div>
 </div>
 <div class="col-md-4 col-sm-6 col-xs-12">
-<div class="blog-item wow fadeInLeft" data-wow-delay="0.2s">
-<div class="blog-image">
-<a href="#">
-<img src="{% static 'WocLanding/img/blog/img3.jpg' %}" alt="">
-</a>
+  <div class="blog-item wow fadeInUp" data-wow-delay="0.2s">
+  <div class="blog-image">
+  <a href="#">
+  <img src="{% static 'WocLanding/img/blog/img2.jpg' %}" alt="">
+  </a>
+  </div>
+  <div class="blog-info">
+    <h3><a href="http://blog.ecellmnnit.in/">E-cell | MNNIT</a></h3>
+    <div class="meta">
+      <span class="meta-part"><a href="#"><i class="icon-eye"></i> 2500</a></span>
+      <span class="meta-part"><a href="#"><i class="icon-bubble"></i> 100</a></span>
+      <span class="meta-part"><a href="#"><i class="icon-calendar"></i> 2017-2018</a></span>
+    </div>
+    <p><a href="http://blog.ecellmnnit.in/">Some cool blogs by E-cell Mnnit on Entrepreneurship.</a></p>
+  </div>
+  </div>
 </div>
-<div class="blog-info">
-<h3><a href="single-post.html">It’s no secret that virtual reality</a></h3>
-<div class="meta">
-<span class="meta-part"><a href="#"><i class="icon-eye"></i> 2500</a></span>
-<span class="meta-part"><a href="#"><i class="icon-bubble"></i> 100</a></span>
-<span class="meta-part"><a href="#"><i class="icon-calendar"></i> 21 Mar, 2016</a></span>
-</div>
-<p>Lorem ipsum dolor sit amet cons tetuer adipiscing elit. dolor sit...</p>
-</div>
-</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="blog-item wow fadeInLeft" data-wow-delay="0.2s">
+  <div class="blog-image">
+    <a href="#">
+    <img src="{% static 'WocLanding/img/blog/img3.jpg' %}" alt="">
+    </a>
+  </div>
+  <div class="blog-info">
+    <h3><a href="single-post.html">Coding in the Wild | Feross </a></h3>
+    <div class="meta">
+      <span class="meta-part"><a href="#"><i class="icon-eye"></i> 2500</a></span>
+      <span class="meta-part"><a href="#"><i class="icon-bubble"></i> 100</a></span>
+      <span class="meta-part"><a href="#"><i class="icon-calendar"></i> 13 September, 2016</a></span>
+    </div>
+    <p><a href="https://feross.org/coding-in-the-wild/">
+      An Open Source blog by Feross Aboukhadijeh, a programmer, designer, teacher, and mad scientist.
+    </a></p>
+  </div>
+  </div>
 </div>
 </div>
 </div>
 </section>
 
 
-<section id="pricing" class="section">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<h2 class="section-title wow fadeInUp" data-wow-delay="0s">Take a look at Our Pricing</h2>
-<p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A <br> enean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class="pricing-table wow fadeInLeft" data-wow-delay="0.3s">
-<div class="table-icon">
-<i class="icon-user"></i>
-</div>
-<h3>BASIC</h3>
-<ul class="plan-info">
-<li><i class="icon-check"></i> Access to Booth</li>
-<li><i class="icon-minus"></i> Conference Tickets</li>
-<li><i class="icon-minus"></i> Printed Materials</li>
-</ul>
-<div class="price">
-<h4>$0.00</h4>
-</div>
-<div class="button-area">
-<a href="#" class="btn btn-common">Buy Now</a>
-</div>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class="pricing-table pricing-active wow fadeInDown" data-wow-delay="0.3s">
-<div class="table-icon">
-<i class="icon-plane"></i>
-</div>
-<h3>STANDARD</h3>
-<ul class="plan-info">
-<li><i class="icon-check"></i> Access to Booth</li>
-<li><i class="icon-check"></i> Conference Tickets</li>
-<li><i class="icon-minus"></i> Printed Materials</li>
-</ul>
-<div class="price">
-<h4>$99</h4>
-</div>
-<div class="button-area">
-<a href="#" class="btn btn-common">Buy Now</a>
-</div>
-</div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class="pricing-table wow fadeInRight" data-wow-delay="0.3s">
-<div class="table-icon">
-<i class="icon-lock"></i>
-</div>
-<h3>PREMIUM</h3>
-<ul class="plan-info">
-<li><i class="icon-check"></i> Access to Booth</li>
-<li><i class="icon-check"></i> Conference Tickets</li>
-<li><i class="icon-check"></i> Printed Materials</li>
-</ul>
-<div class="price">
-<h4>$149</h4>
-</div>
-<div class="button-area">
-<a href="#" class="btn btn-common">Buy Now</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
 
+<section id="map" style="">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Get In Touch</h2>
+      <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Feel free to reach us anytime you feel some trouble.<br>
+      </p>
+    </div>
+    <div id="map_canvas">
 
-<section id="map">
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-12">
-<h2 class="section-title wow fadeInUp" data-wow-delay="0s">Get In Touch</h2>
-<p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. A <br> enean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-</div>
-<div id="map_canvas"></div>
-</div>
-</div>
+    </div>
+  </div>
+  </div>
 </section>
 
 
 <div class="main-content">
-
 <section id="contact">
 <div class="container">
 <div class="row wow fadeInDown" data-wow-delay="0.3s">
 <div class="col-md-8 col-sm-7 contact-form">
 <form role="form" id="contactForm" data-toggle="validator">
-<div class="title-header">
-<h3 class="title-medium pull-left">Send us a message</h3>
-<div class="icon pull-right"><i class="icon-envelope"></i></div>
-</div>
-<div class="row">
-<div class="col-md-6">
-<div class="label-line">
-<span class="span"></span>
-<label class="label transition">Name</label>
-<input type="text" class="input" id="name" required data-error="Please enter your name">
-<div class="help-block with-errors"></div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="label-line">
-<span class="span"></span>
-<label class="label transition">Email</label>
-<input type="email" class="input" id="email" required data-error="Please enter your email">
-<div class="help-block with-errors"></div>
-</div>
-</div>
-<div class="col-md-12">
-<div class="label-line textarea">
-<span class="span"></span>
-<label class="label transition">Message</label>
-<textarea id="message" class="input" required data-error="Write your message"></textarea>
-<div class="help-block with-errors"></div>
-</div>
-<button type="submit" id="form-submit" class="btn btn-common">Send <i class="icon-paper-plane" aria-hidden="true"></i></button>
-<div id="msgSubmit" class="h3 text-center hidden"></div>
-<div class="clearfix"></div>
-</div>
-</div>
+  <div class="title-header">
+    <h3 class="title-medium pull-left">Send us a message</h3>
+    <div class="icon pull-right"><i class="icon-envelope"></i></div>
+  </div>
+  <div class="row">
+  <div class="col-md-6">
+    <div class="label-line">
+      <span class="span"></span>
+      <label class="label transition">Name</label>
+      <input type="text" class="input" id="name" required data-error="Please enter your name">
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="label-line">
+      <span class="span"></span>
+      <label class="label transition">Email</label>
+      <input type="email" class="input" id="email" required data-error="Please enter your email">
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <div class="label-line textarea">
+      <span class="span"></span>
+      <label class="label transition">Message</label>
+      <textarea id="message" class="input" required data-error="Write your message"></textarea>
+      <div class="help-block with-errors"></div>
+    </div>
+    <button type="submit" id="form-submit" class="btn btn-common">Send <i class="icon-paper-plane" aria-hidden="true"></i></button>
+    <div id="msgSubmit" class="h3 text-center hidden"></div>
+    <div class="clearfix"></div>
+  </div>
+  </div>
 </form>
 </div>
 <div class="col-md-4 col-sm-5 information">
-<div class="title-header">
-<h3 class="title-medium">Contact Informatione</h3>
-</div>
-<div class="contact-datails">
-<div class="icon">
-<i class="fa fa-map-marker"></i>
-</div>
-<div class="info">
-<span class="detail">Marriott Marquis, San Francisco, CA<br> United States</span>
-</div>
-</div>
-<div class="contact-datails">
-<div class="icon">
-<i class="fa fa-phone"></i>
-</div>
-<div class="info">
-<span class="detail">+123456789000</span>
-</div>
-</div>
-<div class="contact-datails">
-<div class="icon">
-<i class="fa fa-envelope"></i>
-</div>
-<div class="info">
-<span class="detail"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="660f08000926070405024805090b">[email&#160;protected]</a></span>
-</div>
-</div>
-<div class="social text-center">
-<a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
-<a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-</div>
+  <div class="title-header">
+  <h3 class="title-medium">Contact Informatione</h3>
+  </div>
+  <div class="contact-datails">
+    <div class="icon">
+      <i class="fa fa-map-marker"></i>
+      </div>
+    <div class="info">
+      <span class="detail">Telyarganj, MNNIT Allahabad, UP<br> India</span>
+    </div>
+  </div>
+  <div class="contact-datails">
+    <div class="icon">
+      <i class="fa fa-phone"></i>
+    </div>
+    <div class="info">
+      <span class="detail">+91-7905915393</span>
+    </div>
+  </div>
+    <div class="contact-datails">
+    <div class="icon">
+      <i class="fa fa-envelope"></i>
+    </div>
+    <div class="info">
+      <span class="detail"><a>wocmnnit@gmail.com</a></span>
+    </div>
+  </div>
+  <div class="social text-center">
+    <a class="social" href="https://www.facebook.com/hack36mnnit/" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a class="social" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
+    <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+  </div>
 </div>
 </div>
 </div>
@@ -992,71 +858,68 @@ C <br> O <br> F <br> F <br>E <br>E <br> <br> B <br> R <br> E <br> A <br> K
 <footer class="section">
 <div class="container">
 <div class="row">
-<div class="col-md-3 col-sm-3 col-xs-12">
-<h3><img src="{% static 'WocLanding/img/footer-logo.png' %}" alt=""></h3>
-<p>
-If you think you have the passion,
-attitude and capability to join us
-the next big software company
-s so that we can get the convers.
-</p>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-12">
-<h3>Support</h3>
-<ul>
-<li><a href="#">Support</a></li>
-<li><a href="#">Docs</a></li>
-<li><a href="#">Contact Us</a></li>
-</ul>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-12">
-<h3>Learn More</h3>
-<ul>
-<li><a href="#">How it Works</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Log In</a></li>
-<li><a href="#">Sign Up</a></li>
-</ul>
-</div>
-<div class="col-md-3 col-sm-3 col-xs-12">
-<h3>Quick Link</h3>
-<ul>
-<li><a href="#">Schedule</a></li>
-<li><a href="#">Gallery</a></li>
-<li><a href="#">Team</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Pricing</a></li>
-</ul>
-</div>
-</div>
+  <div class="col-md-3 col-sm-3 col-xs-12">
+    <h3><img src="{% static 'WocLanding/icons/tab_icon_old.png' %}" alt="" style="max-width: 200px; max-height: 200px;"></h3> 
+    <p>
+      If you think you have the passion,
+      attitude and capability to hack it.
+      You are most welcome to attend the Weekend of Code.
+    </p>
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-12">
+    <h3>Support</h3>
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Direction</a></li>
+    </ul>
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-12">
+    <h3>Learn More</h3>
+    <ul>
+      <li><a href="#">Why WOC</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="http://mnnit.ac.in/">MNNIT</a></li>
+    </ul>
+  </div>  
+  <div class="col-md-3 col-sm-3 col-xs-12">
+  <h3>Quick Link</h3>
+  <ul>
+    <li><a href="#">Schedule</a></li>
+    <li><a href="#">Register</a></li>
+    <li><a href="http://avishkar.xyz/">Avishkar</a></li>
+    <li><a href="http://renaissance.ecellmnnit.in/">Renaissance</a></li>
+    <li><a href="http://tedxmnnit.in/">TedXMnnit</a></li>
+  </ul>
+  </div>
+  </div>
 </div>
 </footer>
-
 </div>
 
 
 <section id="copyright">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<p class="copyright-text text-center">
-©Designed and Developed by
-<a href="http://graygrids.com/">
-GrayGrids
-</a>
-</p>
-</div>
-</div>
-</div>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p class="copyright-text text-center">
+      ©Designed and Developed with <i class="fa fa-heart" style="color:red;"></i> by
+        <a href="">
+        Team WOC
+        </a>
+    </p>
+    </div>
+  </div>
+  </div>
 </section>
 
 
-<a href="#" class="back-to-top">
-<i class="icon-arrow-up"></i>
-</a>
-<div class="bottom"> <a href="#" class="settings"> </a> </div>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'WocLanding/js/jquery.min.js' %}"></script>
+    <a href="#header-wrap" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+    </a>
+  
+</script><script src="{% static 'WocLanding/js/jquery.min.js' %}"></script>
 
 <script src="{% static 'WocLanding/js/bootstrap.min.js' %}"></script>
 
@@ -1075,11 +938,14 @@ GrayGrids
 <script src="{% static 'WocLanding/js/form-validator.min.js' %}"></script>
 <script src="{% static 'WocLanding/js/contact-form-script.js' %}"></script>
 
-<script src="{% static 'WocLanding/js/color-switcher.js' %}"></script>
-
 <script src="{% static 'WocLanding/js/main.js' %}"></script>
 
 <script type="text/javascript" src="{% static 'WocLanding/js/jquery.mapit.min.js' %}"></script>
 <script src="{% static 'WocLanding/js/initializers.js' %}"></script>
 </body>
 </html>
+
+
+<!--
+<script type="text/javascript" src="{% static 'WocLanding/js/color-switcher.js' %}"></script>
+-->
