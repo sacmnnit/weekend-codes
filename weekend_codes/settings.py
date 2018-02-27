@@ -13,7 +13,7 @@ PROJECT_DIR = Path(__file__).parent
 
 #for local
 
-SECRET_KEY = SECRET_KEY #'7yl&y17r&7h*#fk&wfh0%imys#^m$0+k$)l!-idm*md%w_ldcj'
+SECRET_KEY = '7yl&y17r&7h*#fk&wfh0%imys#^m$0+k$)l!-idm*md%w_ldcj'
 DEBUG = True # if you set it False then the allowed host must be saved to som port like 4 7 etc or just set it to all like ['*']
 DATABASES = {
     'default': {
@@ -46,7 +46,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 # EMAIL_HOST_USER = 'deepakbharti823@gmail.com'
 EMAIL_HOST_USER='wocmnnit@gmail.com'
 # EMAIL_HOST_PASSWORD = 'zwmdutnsiyyhskge'
-EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD#'weekendofcode@mnnit'
+EMAIL_HOST_PASSWORD = 'weekendofcode@mnnit'
 EMAIL_PORT = 587
 
 
