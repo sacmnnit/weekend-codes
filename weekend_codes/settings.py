@@ -13,27 +13,27 @@ PROJECT_DIR = Path(__file__).parent
 
 #for local
 
-# SECRET_KEY = '7yl&y17r&7h*#fk&wfh0%imys#^m$0+k$)l!-idm*md%w_ldcj'
-# DEBUG = True # if you set it False then the allowed host must be saved to som port like 4 7 etc or just set it to all like ['*']
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': PROJECT_DIR.child('db.sqlite3'),
-#     }
-# } 
-# ALLOWED_HOSTS = ['*']   
+SECRET_KEY = '7yl&y17r&7h*#fk&wfh0%imys#^m$0+k$)l!-idm*md%w_ldcj'
+DEBUG = True # if you set it False then the allowed host must be saved to som port like 4 7 etc or just set it to all like ['*']
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': PROJECT_DIR.child('db.sqlite3'),
+    }
+} 
+ALLOWED_HOSTS = ['.weekendofcodes.herokuapp.com']   
 
 #for local
 
 #for heroku
-SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
-DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL'),
-    )
-}
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())   
+# SECRET_KEY = config('SECRET_KEY')
+# DEBUG = config('DEBUG', default=False, cast=bool)
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default=config('DATABASE_URL'),
+#     )
+# }
+# ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())   
 #end heroku
 
 ADMINS = (   
