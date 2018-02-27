@@ -3,7 +3,7 @@
   "description": "Introduction to WOC 1.0",
   "repository": "https://github.com/MNNIT-Developers/weekend-codes/",
   "keywords": ["WOC", "MNNIT", "heroku woc"],
-  "success_url":"/success",
+  "success_url":"/",
   "env":{
     "DISABLE_COLLECTSTATIC":"1", 
     "SECRET_KEY": {
