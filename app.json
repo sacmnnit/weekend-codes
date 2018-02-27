@@ -18,6 +18,6 @@
   ], 
   "scripts":
     {
-      //"postdeploy":"./postdeploy.sh"
+      "postdeploy":"./postdeploy.sh"
     }
 }
