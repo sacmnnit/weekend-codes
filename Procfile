@@ -1,1 +1,1 @@
-web: gunicorn weekend_codes.wsgi --log-file -
+web: gunicorn weekend_codes.wsgi --log-file --preload --workers 1
