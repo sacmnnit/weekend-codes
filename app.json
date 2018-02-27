@@ -16,8 +16,4 @@
 	    "plan":"heroku-postgresql"
     }
   ], 
-  "scripts":
-    {
-      "postdeploy":"./postdeploy.sh"
-    }
 }
