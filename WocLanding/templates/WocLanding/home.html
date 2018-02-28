@@ -90,7 +90,7 @@
       <div class="item active">
         <img src="{% static 'WocLanding/img/slider/bg-1.jpg' %}" alt="" style="min-width: 100%; max-height:600px;">
         <div class="carousel-caption">
-          <h2 class="wow fadeInRight type_slider" data-wow-delay="300ms">WOC 2018 - DevJam+CodeStart<br> Join us be There to hack the code</h2>
+          <h2 class="wow fadeInRight type_slider" data-wow-delay="300ms">WOC 2018 - DevJam+CodeStart<br> Join us And Be There to hack the code</h2>
           <div class="buttons wow fadeInDown" data-wow-delay="0.2s"><a class="btn btn-lg btn-border" href="https://weekendofcode.herokuapp.com/">Registration</a></div>
           <a data-scroll href="#featured">
           <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
@@ -142,7 +142,7 @@
     <div class="row">
       <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
         <div class="text">
-          <h2>WOC 1.0<br>DevJam+CodeStart</h2>
+          <h2> <span class="type_woc10">WOC 1.0 </span><br> <span class="type_devjam_codestart">DevJam+CodeStart</span></h2>
           <h4>Telyarganj, MNNIT Allahabad, UP <br> March 29, 2018 - APRIL 01, 2018 </h4>
           <a href="https://weekendofcode.herokuapp.com/" class="btn btn-lg btn-common">Register</a>
         </div>
@@ -166,7 +166,7 @@
       <i class="icon-location-pin"></i>
       </div>
       <div class="desc">
-      <h4>Location</h4>
+      <h4 class="type_event">Location</h4>
       <p>Telyarganj, MNNIT Allahabad, UP</p>
       </div>
       </div>
@@ -177,7 +177,7 @@
       <i class="icon-calendar"></i>
       </div>
       <div class="desc">
-      <h4>Date & Time</h4>
+      <h4 class="type_event">Date & Time</h4>
       <p>March 29, 2018 - APRIL 01, 2018 </p>
       </div>
       </div>
@@ -188,7 +188,7 @@
       <i class="icon-microphone"></i>
       </div>
       <div class="desc">
-      <h4>Speakers</h4>
+      <h4 class="type_event">Speakers</h4>
       <p>10 Tech Icons and Professionals</p>
       </div>
       </div>
@@ -199,7 +199,7 @@
       <i class="icon-wallet"></i>
       </div>
       <div class="desc left">
-      <h4>Registration</h4>
+      <h4 class="type_event">Registration</h4>
       <p>150 People</p>
       </div>
       </div>
@@ -233,7 +233,7 @@
     <div class="col-md-12">
     <h2 class="section-title wow fadeInUp" data-wow-delay="0s">WHY WOC</h2>
     <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">
-      <span style="font-size: 20px;">
+      <span style="font-size: 20px;" class="type_why_woc">
     Opportunity dances with those already on the floor and ..The floor is here !!</span>
     </p>
     <div class="col-md-4 col-sm-6">
@@ -974,15 +974,41 @@ $('.send_message').typeIt({
 
 
 <script type="text/javascript">
-$('.type_slider').typeIt({ 
-  // breakLines:false, 
+$('.type_slider').typeIt({  
   speed: 100,
-  // deleteDelay: 750, 
   autoStart: false,
-  // loop:true,
-  // loopDelay:1500 
 });
 </script>
+
+<script type="text/javascript">
+$('.type_event').typeIt({  
+  speed: 100,
+  autoStart: false,
+});
+</script>
+
+<script type="text/javascript">
+$('.type_why_woc').typeIt({  
+  speed: 100,
+  autoStart: false,
+});
+</script>
+
+<script type="text/javascript">
+$('.type_woc10').typeIt({  
+  speed: 300,
+  loop:true,
+  autoStart: false,
+});
+</script>
+
+<script type="text/javascript">
+$('.type_devjam_codestart').typeIt({  
+  speed: 100,
+  autoStart: false,
+});
+</script>
+
 </body>
 </html>
 
