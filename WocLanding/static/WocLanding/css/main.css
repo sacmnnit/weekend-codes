@@ -1445,6 +1445,7 @@ h1 {
 .main-content {
   background: url(../img/background/contact-bg.jpg) center;
   background-size: cover;
+  opacity: 0.6;
 }
 #contact .contact-form {
   background: #fff;
@@ -1648,19 +1649,22 @@ footer img {
   margin-top: -8px;
 }
 footer h3 {
-  font-size: 14px;
+  color: green;
+  font-size: 17px;
   font-weight: 700;
   padding-bottom: 10px;
 }
 footer p {
-  font-size: 13px;
-  color: #2d2d2d;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
   line-height: 20px;
   padding-right: 50px;
 }
 footer ul li a {
-  color: #2d2d2d;
-  font-size: 13px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
   font-weight: 400;
 }
 /* ==========================================================================
