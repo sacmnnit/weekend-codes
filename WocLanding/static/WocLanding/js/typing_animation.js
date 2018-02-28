@@ -27,6 +27,11 @@ $('.type_why_woc_after').typeIt({
   autoStart: false,
 });
 
+$('.type_sponsor').typeIt({  
+  speed: 250,
+  loop:true,
+  autoStart: false,
+});
 
 $('.type_woc10').typeIt({  
   speed: 300,
