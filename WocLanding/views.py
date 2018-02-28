@@ -9,7 +9,7 @@ from django.template.context_processors import csrf
 def home(request):
 	csrf_token = (csrf(request)['csrf_token'])
 	print(csrf_token)
-	return render(request,'WocLanding/index.html',{'csrf_token':csrf_token})
+	return render(request,'WocLanding/home.html',{'csrf_token':csrf_token})
 
 def test(request):
 	return render(request,'test/test.html',{})

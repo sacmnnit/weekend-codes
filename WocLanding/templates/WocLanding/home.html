@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="{% static 'WocLanding/icons/tab_icon.png' %}">
 <title>WOC 2018 | MNNIT</title>
-
+ 
 <link rel="stylesheet" type="text/css" href="{% static 'WocLanding/css/bootstrap.min.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'WocLanding/css/main.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'WocLanding/css/responsive.css' %}">
@@ -55,7 +55,7 @@
           <li><a href="http://mnnit.ac.in/">MNNIT</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="https://weekendofcode.herokuapp.com/">Register</a></li>
-          <li><a href="#map">Contact Us</a></li>
+          <li><a href="#contactForm">Contact Us</a></li>
         </ul>
         </li>
       </ul>
@@ -75,7 +75,7 @@
           <li><a href="http://mnnit.ac.in/">MNNIT</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="https://weekendofcode.herokuapp.com/">Register</a></li>
-          <li><a href="#map">Contact Us</a></li>
+          <li><a href="#contactForm">Contact Us</a></li>
         </ul>
         </li>
       </ul>
@@ -104,8 +104,8 @@
         <div class="carousel-caption">
           <h2 class="wow fadeInUp" data-wow-delay="300ms">Opportunity to showcase<br> your Hacks to World</h2>
           <div class="buttons">
-          <a class="btn btn-lg btn-common wow fadeInLeft" data-wow-delay="300ms" href="#gallery">Galler</a>
-          <a class="btn btn-lg btn-border wow fadeInRight" data-wow-delay="300ms" href="#">Know More</a>
+          <a class="btn btn-lg btn-common wow fadeInLeft" data-wow-delay="300ms" href="#gallery">Gallery</a>
+          <a class="btn btn-lg btn-border wow fadeInRight" data-wow-delay="300ms" href="#event">Know More</a>
           </div>
           <a data-scroll href="#featured">
           <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
@@ -115,10 +115,10 @@
         </div>
       </div>
       <div class="item">
-        <img src="{% static 'WocLanding/img/slider/bg-3.jpg' %}" alt="">
+        <img src="{% static 'WocLanding/img/slider/bg-3.jpg' %}" alt="" style="min-width: 100%; max-height:600px;">
         <div class="carousel-caption">
           <h2 class="wow fadeInDown" data-wow-delay="300ms">Expert and Love to Speak? <br> Apply as Speaker for Taking Session</h2>
-          <div class="wow fadeInUp" data-wow-delay="300ms"><a class="btn btn-lg btn-common" href="#">Apply Now</a></div>
+          <div class="wow fadeInUp" data-wow-delay="300ms"><a class="btn btn-lg btn-common" href="#contactForm">Apply Now</a></div>
           <a data-scroll href="#featured">
           <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
           <span></span>
@@ -230,21 +230,21 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-    <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Why WOC</h2>
+    <h2 class="section-title wow fadeInUp" data-wow-delay="0s">WHY WOC</h2>
     <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">
-    Near 20 teams applied for Hack36 but only 2 of them got the <br>
-    chance to participate in the main event due the wide participation of teams from<br> other colleges. This wide participation of the first year students depicts their enthusiasm<br>
-    and inclination towards development activities.<br>After not getting a chance in Hack36 they felt
-    a little discouraged. This event is an attempt<br> to motivate them to continue their zest to learn and develop more. </p>
+      <span style="font-size: 20px;">
+    Opportunity dances with those already on the floor and ..The floor is here !!</span>
+    </p>
     <div class="col-md-4 col-sm-6">
       <div class="featured-box wow fadeInLeft" data-wow-delay="0.1s">
       <div class="icon">
       <i class="icon-energy"></i>
       </div>
       <div class="featured-content">
-      <h4>Google Summer Of Code</h4>
-      <p>The best time to make the students aware about the procedure of preparation and selection for such kind of programmes is the first year. GSoC is a great opportunity for students to contribute to open source . 
-    </p>
+      <h4>Introduction to Open Source</h4>
+      <p>
+        Have a deeper insight of various Open Source Communities and be a part of them. Feel proud to be a member of communities like Coala, Drupal, Zulip, Python Software Foundation, etc. 
+      </p>
       </div>
       </div>
     </div>
@@ -254,8 +254,10 @@
       <i class="icon-people"></i>
       </div>
       <div class="featured-content">
-      <h4>Practice For ACM ICPC</h4>
-      <p>The ACM-ICPC is considered as the "Olympics of Programming Competitions". It is quite simply, the oldest, largest, and most prestigious international level programming contest. MNNIT is good , we need to make it best.</p>
+      <h4>Dive Deep Into Competitive Programming</h4>
+      <p>
+      Sharpen your competitive programming skills by competing against brightest minds of college and take a step towards securing your spot at ACM-ICPC world finals.
+      </p>
       </div>
       </div>
     </div>
@@ -265,8 +267,8 @@
       <i class="icon-graph"></i>
       </div>
       <div class="featured-content">
-      <h4>Betterment of  Placement Statistics</h4>
-      <p>CodeStart and DevJam will help them improve their algorithmic skills and expanding their development skill for for companies. This will reflect in the placement statistics of the college.
+      <h4>Internship Opportunity</h4>
+      <p>Build great projects and get a chance to grab an  internship at  prestigious organizations. Shover yourself with an opportunity to work on real projects and have fun along the way.
     </p>
       </div>
       </div>
@@ -496,15 +498,108 @@
 </div>
 </section>
 
+<section id="gallery" class="section">
+<div class="container">
+<div class="col-md-12">
+<h2 class="section-title wow fadeInUp" data-wow-delay="0s">Our Gallery</h2>
+<p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">There are some pictures from our newly started Hackathon Hack36 <br> This will motivate you to attend WOC.</p>
+</div>
+<div class="gallery-wrap wow fadeInDown">
+<div class="col-md-4 col-sm-4 col-xs-12 gellery-pn">
+  <div class="gallery-item">
+    <a href="#"><img src="{% static 'WocLanding/img/gallery/img-1.jpg' %}" alt=""></a>
+    <div class="overlay">
+      <div class="icons">
+      <a class="preview lightbox" href="{% static 'WocLanding/img/gallery/img-1.jpg' %}"><i class="icon-eye"></i></a>
+      <a class="link" href="https://www.facebook.com/hack36mnnit/"><i class="icon-link"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <a href="#"><img src="{% static 'WocLanding/img/gallery/img-2.jpg' %}" alt=""></a>
+    <div class="overlay">
+      <div class="icons">
+      <a class="preview lightbox" href="{% static 'WocLanding/img/gallery/img-2.jpg' %}"><i class="icon-eye"></i></a>
+      <a class="link" href="https://www.facebook.com/hack36mnnit/"><i class="icon-link"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-item">
+  <a href="#"><img src="{% static 'WocLanding/img/gallery/img-3.jpg' %}" alt=""></a>
+  <div class="overlay">
+    <div class="icons">
+    <a class="preview lightbox" href="{% static 'WocLanding/img/gallery/img-3.jpg' %}"><i class="icon-eye"></i></a>
+    <a class="link" href="https://www.facebook.com/hack36mnnit/"><i class="icon-link"></i></a>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 gellery-pn">
+  <div class="gallery-item">
+    <a href="#"><img src="{% static 'WocLanding/img/gallery/img-4.jpg' %}" alt="" style="min-height: 318px;"></a>
+    <div class="overlay">
+    <div class="icons">
+      <a class="preview lightbox" href="{% static 'WocLanding/img/gallery/img-4.jpg' %}"><i class="icon-eye"></i></a>
+      <a class="link" href="https://www.facebook.com/hack36mnnit/"><i class="icon-link"></i></a>
+    </div>
+    </div>
+  </div>
+  <div class="gallery-item">
+    <a href="#"><img src="{% static 'WocLanding/img/gallery/img-5.jpg' %}" alt=""></a>
+    <div class="overlay">
+    <div class="icons">
+      <a class="preview lightbox" href="{% static 'WocLanding/img/gallery/img-5.jpg' %}"><i class="icon-eye"></i></a>
+      <a class="link" href="https://www.facebook.com/hack36mnnit/"><i class="icon-link"></i></a>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 gellery-pn">
+<div class="gallery-item">
+  <a href="#"><img src="{% static 'WocLanding/img/gallery/img-6.jpg' %}" alt=""></a>
+  <div class="overlay">
+    <div class="icons">
+    <a class="preview lightbox" href="{% static 'WocLanding/img/gallery/img-6.jpg' %}"><i class="icon-eye"></i></a>
+    <a class="link" href="https://www.facebook.com/hack36mnnit/"><i class="icon-link"></i></a>
+    </div>
+  </div>
+</div>
+  <div class="gallery-item">
+  <a href="#"><img src="{% static 'WocLanding/img/gallery/img-7.jpg' %}" alt=""></a>
+  <div class="overlay">
+    <div class="icons">
+    <a class="preview lightbox" href="{% static 'WocLanding/img/gallery/img-7.jpg' %}"><i class="icon-eye"></i></a>
+    <a class="link" href="https://www.facebook.com/hack36mnnit/"><i class="icon-link"></i></a>
+    </div>
+  </div>
+  </div>
+  <div class="gallery-item">
+  <a href="#"><img src="{% static 'WocLanding/img/gallery/img-8.jpg' %}" alt="" style="min-height: 308px;"></a>
+  <div class="overlay">
+    <div class="icons">
+    <a class="preview lightbox" href="{% static 'WocLanding/img/gallery/img-8.jpg' %}"><i class="icon-eye"></i></a>
+    <a class="link" href="https://www.facebook.com/hack36mnnit/"><i class="icon-link"></i></a>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
 
 <section id="sponsors" class="section">
 <div class="container">
   <div class="row">
   <div class="col-md-12">
     <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Our Sponsors</h2>
-    <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Come and join Us.<br> Be the next Sponsor.</p>
+    <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Come join Us and Be the part of Weekend Of Code @MNNIT.</p>
   </div>
-  <div class="col-md-3 col-sm-6 col-xs-12">
+  
+  <div class="more-btn" style="text-align: center;">
+  <a href="#contactForm" class="btn btn-common wow fadeInUp center" data-wow-delay="0.3s"> Become a Sponsor</a>
+  </div>
+ <!-- <div class="col-md-3 col-sm-6 col-xs-12">
     <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.1s">
     <a href="#"><img src="{% static 'WocLanding/img/sponsors/logo-01.png' %}" alt=""></a>
     </div>
@@ -523,96 +618,13 @@
     <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.4s">
     <a href="#"><img src="{% static 'WocLanding/img/sponsors/logo-04.png' %}" alt=""></a>
     </div>
-  </div>
+  </div> -->
   </div>
 </div>
 </section>
 
 
-<section id="gallery" class="section">
-<div class="container">
-<div class="col-md-12">
-<h2 class="section-title wow fadeInUp" data-wow-delay="0s">Our Gallery</h2>
-<p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">There are some pictures from our newly started Hackathon Hack36 <br> This will motivate you to attend WOC.</p>
-</div>
-<div class="gallery-wrap wow fadeInDown">
-<div class="col-md-4 col-sm-4 col-xs-12 gellery-pn">
-  <div class="gallery-item">
-    <a href="#"><img src="{% static 'WocLanding/img/slider/bg-1.jpg' %}" alt=""></a>
-    <div class="overlay">
-      <div class="icons">
-      <a class="preview lightbox" href="{% static 'WocLanding/img/slider/bg-1.jpg' %}"><i class="icon-eye"></i></a>
-      <a class="link" href=""><i class="icon-link"></i></a>
-      </div>
-    </div>
-  </div>
-  <div class="gallery-item">
-    <a href="#"><img src="{% static 'WocLanding/img/slider/bg-2.jpg' %}" alt=""></a>
-    <div class="overlay">
-      <div class="icons">
-      <a class="preview lightbox" href="{% static 'WocLanding/img/slider/bg-2.jpg' %}"><i class="icon-eye"></i></a>
-      <a class="link" href=""><i class="icon-link"></i></a>
-      </div>
-    </div>
-  </div>
-  <div class="gallery-item">
-  <a href="#"><img src="{% static 'WocLanding/img/slider/bg-3.jpg' %}" alt=""></a>
-  <div class="overlay">
-    <div class="icons">
-    <a class="preview lightbox" href="{% static 'WocLanding/img/slider/bg-3.jpg' %}"><i class="icon-eye"></i></a>
-    <a class="link" href=""><i class="icon-link"></i></a>
-    </div>
-  </div>
-  </div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12 gellery-pn">
-  <div class="gallery-item">
-    <a href="#"><img src="{% static 'WocLanding/img/gallery/img-4.jpg' %}" alt=""></a>
-    <div class="overlay">
-    <div class="icons">
-      <a class="preview lightbox" href="{% static 'WocLanding/img/gallery/img-4.jpg' %}"><i class="icon-eye"></i></a>
-      <a class="link" href=""><i class="icon-link"></i></a>
-    </div>
-    </div>
-  </div>
-  <div class="gallery-item">
-    <a href="#"><img src="{% static 'WocLanding/img/gallery/img-5.jpg' %}" alt=""></a>
-    <div class="overlay">
-    <div class="icons">
-      <a class="preview lightbox" href="{% static 'WocLanding/img/gallery/img-5.jpg' %}"><i class="icon-eye"></i></a>
-      <a class="link" href=""><i class="icon-link"></i></a>
-    </div>
-    </div>
-  </div>
-</div>
-<div class="col-md-4 col-sm-4 col-xs-12 gellery-pn">
-<div class="gallery-item">
-<a href="#"><img src="{% static 'WocLanding/img/gallery/img-6.jpg' %}" alt=""></a>
-<div class="overlay">
-<div class="icons">
-<a class="preview lightbox" href="{% static 'WocLanding/img/gallery/img-6.jpg' %}"><i class="icon-eye"></i></a>
-<a class="link" href=""><i class="icon-link"></i></a>
-</div>
-</div>
-</div>
-<div class="gallery-item">
-<a href="#"><img src="{% static 'WocLanding/img/gallery/img-7.jpg' %}" alt=""></a>
-<div class="overlay">
-<div class="icons">
-<a class="preview lightbox" href="{% static 'WocLanding/img/gallery/img-7.jpg' %}"><i class="icon-eye"></i></a>
-<a class="link" href=""><i class="icon-link"></i></a>
-</div>
-</div>
-</div>
-</div>
-<div class="more-btn">
-<a href="https://www.facebook.com/hack36mnnit/" class="btn btn-common wow fadeInUp" data-wow-delay="0.3s">show more</a>
-</div>
-</div>
-</div>
-</section>
-
-
+<!--
 <section id="speakers" class="section">
 <div class="container">
 <div class="row">
@@ -684,7 +696,7 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 
 
 <section id="blog" class="section">
@@ -757,8 +769,6 @@
 </div>
 </section>
 
-
-
 <section id="map" style="">
   <div class="container-fluid">
   <div class="row">
@@ -821,7 +831,7 @@
 </div>
 <div class="col-md-4 col-sm-5 information">
   <div class="title-header">
-  <h3 class="title-medium">Contact Informatione</h3>
+  <h3 class="title-medium">Contact Information</h3>
   </div>
   <div class="contact-datails">
     <div class="icon">
@@ -844,7 +854,7 @@
       <i class="fa fa-envelope"></i>
     </div>
     <div class="info">
-      <span class="detail"><a>wocmnnit@gmail.com</a></span>
+      <span class="detail"><a href="mailto:hackathon@mnnit.ac.in">wocmnnit@gmail.com</a></span>
     </div>
   </div>
   <div class="social text-center">
@@ -872,25 +882,25 @@
   <div class="col-md-3 col-sm-3 col-xs-12">
     <h3>Support</h3>
     <ul>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Direction</a></li>
+      <li><a href="#event">About Us</a></li>
+      <li><a href="#contactForm">Contact</a></li>
+      <li><a href="#map">Direction</a></li>
     </ul>
   </div>
   <div class="col-md-3 col-sm-3 col-xs-12">
     <h3>Learn More</h3>
     <ul>
-      <li><a href="#">Why WOC</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Gallery</a></li>
+      <li><a href="#featured">Why WOC</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#gallery">Gallery</a></li>
       <li><a href="http://mnnit.ac.in/">MNNIT</a></li>
     </ul>
   </div>  
   <div class="col-md-3 col-sm-3 col-xs-12">
   <h3>Quick Link</h3>
   <ul>
-    <li><a href="#">Schedule</a></li>
-    <li><a href="#">Register</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="https://weekendofcode.herokuapp.com/">Register</a></li>
     <li><a href="http://avishkar.xyz/">Avishkar</a></li>
     <li><a href="http://renaissance.ecellmnnit.in/">Renaissance</a></li>
     <li><a href="http://tedxmnnit.in/">TedXMnnit</a></li>
