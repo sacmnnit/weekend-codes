@@ -166,7 +166,7 @@
       <i class="icon-location-pin"></i>
       </div>
       <div class="desc">
-      <h4 class="type_event">Location</h4>
+      <h4 class="type_event_location">Location</h4>
       <p>Telyarganj, MNNIT Allahabad, UP</p>
       </div>
       </div>
@@ -177,7 +177,7 @@
       <i class="icon-calendar"></i>
       </div>
       <div class="desc">
-      <h4 class="type_event">Date & Time</h4>
+      <h4 class="type_event_time">Date & Time</h4>
       <p>March 29, 2018 - APRIL 01, 2018 </p>
       </div>
       </div>
@@ -188,7 +188,7 @@
       <i class="icon-microphone"></i>
       </div>
       <div class="desc">
-      <h4 class="type_event">Speakers</h4>
+      <h4 class="type_event_speakers">Speakers</h4>
       <p>10 Tech Icons and Professionals</p>
       </div>
       </div>
@@ -199,7 +199,7 @@
       <i class="icon-wallet"></i>
       </div>
       <div class="desc left">
-      <h4 class="type_event">Registration</h4>
+      <h4 class="type_event_registration">Registration</h4>
       <p>150 People</p>
       </div>
       </div>
@@ -211,10 +211,10 @@
       WEEKEND OF CODE is a joint initiative of B.Tech final and pre-final year students to provide the freshers an exposure to the world of competitive programming alongwith a glimpse of software development. The Weekend Of Code basically consists of two events:<br>
       <ul>
         <li style="list-style: number;">
-          <span style="color:white; font-size: 20px;">CodeStart: </span> CodeStart is a 3 hours ACM-ICPC styled onsite coding contest. The event aims at providing freshers an experience equivalent to participating in international coding event.          
+          <span style="color:white; font-size: 20px;" class="type_codestart">CodeStart: </span> CodeStart is a 3 hours ACM-ICPC styled onsite coding contest. The event aims at providing freshers an experience equivalent to participating in international coding event.          
         </li>
         <li style="list-style: number;">
-          <span style="color:white; font-size: 20px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DevJam: </span>  DevJam  is 24 hour onsite development event which aims at familiarising the freshers with the latest frameworks and technologies in IT industry.
+          <span style="color:white; font-size: 20px;" class="type_devjam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DevJam: </span>  DevJam  is 24 hour onsite development event which aims at familiarising the freshers with the latest frameworks and technologies in IT industry.
           This event will allow the freshers to learn new technologies and will groom them for participating in various national and international events and thus,  take the name of college to new heights.          
         </li>
       </ul>
@@ -961,53 +961,7 @@
 
 <!-- typing animations -->
 <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
-<script type="text/javascript">
-$('.send_message').typeIt({ 
-  // breakLines:false, 
-  speed: 100,
-  // deleteDelay: 750, 
-  autoStart: false,
-  // loop:true,
-  // loopDelay:1500 
-});
-</script>
-
-
-<script type="text/javascript">
-$('.type_slider').typeIt({  
-  speed: 100,
-  autoStart: false,
-});
-</script>
-
-<script type="text/javascript">
-$('.type_event').typeIt({  
-  speed: 100,
-  autoStart: false,
-});
-</script>
-
-<script type="text/javascript">
-$('.type_why_woc').typeIt({  
-  speed: 100,
-  autoStart: false,
-});
-</script>
-
-<script type="text/javascript">
-$('.type_woc10').typeIt({  
-  speed: 300,
-  loop:true,
-  autoStart: false,
-});
-</script>
-
-<script type="text/javascript">
-$('.type_devjam_codestart').typeIt({  
-  speed: 100,
-  autoStart: false,
-});
-</script>
+<script src="{% static 'WocLanding/js/typing_animation.js' %}"></script>
 
 </body>
 </html>
