@@ -90,7 +90,7 @@
       <div class="item active">
         <img src="{% static 'WocLanding/img/slider/bg-1.jpg' %}" alt="" style="min-width: 100%; max-height:600px;">
         <div class="carousel-caption">
-          <h2 class="wow fadeInRight" data-wow-delay="300ms">WOC 2018 - DevJam+CodeStart<br> Join us be There to hack the code</h2>
+          <h2 class="wow fadeInRight type_slider" data-wow-delay="300ms">WOC 2018 - DevJam+CodeStart<br> Join us be There to hack the code</h2>
           <div class="buttons wow fadeInDown" data-wow-delay="0.2s"><a class="btn btn-lg btn-border" href="https://weekendofcode.herokuapp.com/">Registration</a></div>
           <a data-scroll href="#featured">
           <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
@@ -102,7 +102,7 @@
       <div class="item">
         <img src="{% static 'WocLanding/img/slider/bg-2.jpg' %}" alt="" style="min-width: 100%; max-height:600px;">
         <div class="carousel-caption">
-          <h2 class="wow fadeInUp" data-wow-delay="300ms">Opportunity to showcase<br> your Hacks to World</h2>
+          <h2 class="wow fadeInUp type_slider" data-wow-delay="300ms">Opportunity to showcase<br> your Hacks to World</h2>
           <div class="buttons">
           <a class="btn btn-lg btn-common wow fadeInLeft" data-wow-delay="300ms" href="#gallery">Gallery</a>
 
@@ -118,7 +118,7 @@
       <div class="item">
         <img src="{% static 'WocLanding/img/slider/bg-3.jpg' %}" alt="" style="min-width: 100%; max-height:600px;">
         <div class="carousel-caption">
-          <h2 class="wow fadeInDown" data-wow-delay="300ms">Expert and Love to Speak? <br> Apply as Speaker for Taking Session</h2>
+          <h2 class="wow fadeInDown type_slider" data-wow-delay="300ms">Expert and Love to Speak? <br> Apply as Speaker for Taking Session</h2>
           <div class="wow fadeInUp" data-wow-delay="300ms"><a class="btn btn-lg btn-common" href="#contactForm">Apply Now</a></div>
           <a data-scroll href="#featured">
           <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
@@ -584,12 +584,6 @@
   </div>
   </div>
 </div>
-<<<<<<< HEAD:WocLanding/templates/WocLanding/home.html
-=======
-<div class="more-btn">
-<a href="https://www.facebook.com/wocmnnit/" class="btn btn-common wow fadeInUp" data-wow-delay="0.3s">show more</a>
->>>>>>> 95c09b47c4bb3907df412259c2dd38782bb89e63:WocLanding/templates/WocLanding/index.html
-</div>
 </div>
 </section>
 
@@ -801,7 +795,7 @@
 <span hidden id="csrf" csrf="{{csrf_token}}"></span>
 
   <div class="title-header">
-    <h3 class="title-medium pull-left">Send us a message</h3>
+    <h3 class="title-medium pull-left send_message">Send us a message</h3>
     <div class="icon pull-right"><i class="icon-envelope"></i></div>
   </div>
   <div class="row">
@@ -962,6 +956,32 @@
 <script type="text/javascript" src="{% static 'WocLanding/js/jquery.mapit.min.js' %}"></script>
 <script src="{% static 'WocLanding/js/initializers.js' %}"></script> 
 <script type="text/javascript" src="{% static 'WocLanding/js/color-switcher.js' %}"></script>
+
+
+<!-- typing animations -->
+<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+<script type="text/javascript">
+$('.send_message').typeIt({ 
+  // breakLines:false, 
+  speed: 100,
+  // deleteDelay: 750, 
+  autoStart: false,
+  // loop:true,
+  // loopDelay:1500 
+});
+</script>
+
+
+<script type="text/javascript">
+$('.type_slider').typeIt({ 
+  // breakLines:false, 
+  speed: 100,
+  // deleteDelay: 750, 
+  autoStart: false,
+  // loop:true,
+  // loopDelay:1500 
+});
+</script>
 </body>
 </html>
 
