@@ -105,7 +105,6 @@
           <h2 class="wow fadeInUp" data-wow-delay="300ms">Opportunity to showcase<br> your Hacks to World</h2>
           <div class="buttons">
           <a class="btn btn-lg btn-common wow fadeInLeft" data-wow-delay="300ms" href="#gallery">Gallery</a>
-
           <a class="btn btn-lg btn-border wow fadeInRight" data-wow-delay="300ms" href="#event">Know More</a>
           </div>
           <a data-scroll href="#featured">
@@ -584,11 +583,6 @@
   </div>
   </div>
 </div>
-<<<<<<< HEAD:WocLanding/templates/WocLanding/home.html
-=======
-<div class="more-btn">
-<a href="https://www.facebook.com/wocmnnit/" class="btn btn-common wow fadeInUp" data-wow-delay="0.3s">show more</a>
->>>>>>> 95c09b47c4bb3907df412259c2dd38782bb89e63:WocLanding/templates/WocLanding/index.html
 </div>
 </div>
 </section>
@@ -697,7 +691,7 @@
 </div>
 
   <div class="more-btn text-center">
-  <a href="https://www.facebook.com/wocmnnit/
+  <a href="https://www.facebook.com/hack36mnnit/
 " class="btn btn-common wow fadeInUp" data-wow-delay="0.3s">show more</a>
   </div>
 </div>
@@ -860,15 +854,11 @@
       <i class="fa fa-envelope"></i>
     </div>
     <div class="info">
-<<<<<<< HEAD:WocLanding/templates/WocLanding/home.html
       <span class="detail"><a href="mailto:hackathon@mnnit.ac.in">wocmnnit@gmail.com</a></span>
-=======
-      <span class="detail"><a>hackathon@mnnit.ac.in</a></span>
->>>>>>> 95c09b47c4bb3907df412259c2dd38782bb89e63:WocLanding/templates/WocLanding/index.html
     </div>
   </div>
   <div class="social text-center">
-    <a class="social" href="https://www.facebook.com/wocmnnit/" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a class="social" href="https://www.facebook.com/hack36mnnit/" target="_blank"><i class="fa fa-facebook"></i></a>
     <a class="social" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
     <a class="social" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
   </div>

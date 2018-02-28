@@ -3,7 +3,7 @@ import os
 from unipath import Path
 from decouple import Csv,config
 import dj_database_url
- 
+from .xyz import EMAIL_PASS  
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 PROJECT_DIR = Path(__file__).parent
 
@@ -46,7 +46,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 # EMAIL_HOST_USER = 'deepakbharti823@gmail.com'
 EMAIL_HOST_USER='wocmnnit@gmail.com'
 # EMAIL_HOST_PASSWORD = 'zwmdutnsiyyhskge'
-EMAIL_HOST_PASSWORD = 'weekendofcode@mnnit'
+EMAIL_HOST_PASSWORD = EMAIL_PASS
 EMAIL_PORT = 587
 
 
