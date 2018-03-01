@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^$',home, name='home'),
     url(r'^contact/$',contact, name='contact'),
     url(r'^test/$',test, name='test'),    
+    url(r'^',home,name='home'),
 ]
