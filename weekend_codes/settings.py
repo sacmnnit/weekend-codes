@@ -13,7 +13,7 @@ PROJECT_DIR = Path(__file__).parent
 #for local
 
 SECRET_KEY = os.environ['SECRET_KEY']
-DEBUG = False # if you set it False then the allowed host must be saved to som port like 4 7 etc or just set it to all like ['*']
+DEBUG = True # if you set it False then the allowed host must be saved to som port like 4 7 etc or just set it to all like ['*']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
