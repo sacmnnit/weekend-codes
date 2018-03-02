@@ -6,6 +6,7 @@ $("#contactForm").validator().on("submit", function (event) {
     } else {
         // everything looks good!
         event.preventDefault();
+        $("#form-submit").html('<i class="fas fa-spinner fa-spin"><>');
         submitForm();
     }
 });
@@ -26,6 +27,9 @@ function submitForm(){
         data: "name=" + name + "&email=" + email + "&message=" + message+"&csrfmiddlewaretoken="+csrf, 
         // data: $("form-submit").serialize(),
         cache:false,
+        // beforeSend : function(){
+
+        // },
         success : function(text){
             if (text == "success"){
                 formSuccess(name);
@@ -56,4 +60,5 @@ function submitMSG(valid, msg){
     }
     // $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
     alert(msg);
+    $("#form-submit").html('Send <i class="icon-paper-plane" aria-hidden="true"></i>');
 }
