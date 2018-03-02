@@ -3,7 +3,6 @@ import os
 from unipath import Path
 from decouple import Csv,config
 import dj_database_url
-# from .xyz import EMAIL_PASS  
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 PROJECT_DIR = Path(__file__).parent
 
@@ -14,14 +13,14 @@ PROJECT_DIR = Path(__file__).parent
 #for local
 
 SECRET_KEY = os.environ['SECRET_KEY']
-DEBUG = True # if you set it False then the allowed host must be saved to som port like 4 7 etc or just set it to all like ['*']
+DEBUG = False # if you set it False then the allowed host must be saved to som port like 4 7 etc or just set it to all like ['*']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': PROJECT_DIR.child('db.sqlite3'),
     }
 } 
-ALLOWED_HOSTS = ['*']   
+ALLOWED_HOSTS = ['.weekendofcodes.herokuapp.com']   
 
 #for local
 
