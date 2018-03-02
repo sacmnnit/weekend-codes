@@ -3,7 +3,7 @@ import os
 from unipath import Path
 from decouple import Csv,config
 import dj_database_url
-from .xyz import EMAIL_PASS  
+# from .xyz import EMAIL_PASS  
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 PROJECT_DIR = Path(__file__).parent
 
@@ -13,7 +13,7 @@ PROJECT_DIR = Path(__file__).parent
 
 #for local
 
-SECRET_KEY = '7yl&y17r&7h*#fk&wfh0%imys#^m$0+k$)l!-idm*md%w_ldcj'
+SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = True # if you set it False then the allowed host must be saved to som port like 4 7 etc or just set it to all like ['*']
 DATABASES = {
     'default': {
@@ -43,9 +43,7 @@ ADMINS = (
   
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = 'deepakbharti823@gmail.com'
 EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
-# EMAIL_HOST_PASSWORD = 'zwmdutnsiyyhskge'
 EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
 EMAIL_PORT = 587
 
