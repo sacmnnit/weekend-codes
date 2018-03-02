@@ -21,7 +21,7 @@ DATABASES = {
         'NAME': PROJECT_DIR.child('db.sqlite3'),
     }
 } 
-ALLOWED_HOSTS = ['*']   
+ALLOWED_HOSTS = ['.weekendofcodes.herokuapp.com']   
 
 #for local
 
@@ -44,10 +44,11 @@ ADMINS = (
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 # EMAIL_HOST_USER = 'deepakbharti823@gmail.com'
-EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
+EMAIL_HOST_USER='wocmnnit@gmail.com'
 # EMAIL_HOST_PASSWORD = 'zwmdutnsiyyhskge'
 EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
 EMAIL_PORT = 587
+
 
 ''' 
 If using gmail, you will need to
@@ -55,6 +56,9 @@ unlock Captcha to enable Django
 to  send for you:
 https://accounts.google.com/displayunlockcaptcha
 '''
+
+
+# AUTH_USER_MODULE = 'authentication.Profile'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -95,12 +99,35 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # 'django.template.context_processors.i18n',
             ],
         },
     },
 ]
 
 WSGI_APPLICATION = 'weekend_codes.wsgi.application'
+
+
+# Database
+# https://docs.djangoproject.com/en/1.8/ref/settings/#databases
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': PROJECT_DIR.child('db.sqlite3'),
+#     }
+# } 
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'ia',
+#         'USER': 'root',
+#         'PASSWORD': '',
+#         'HOST': '139.59.59.50',
+#         'PORT': '5432',
+#     }
+# }
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -123,10 +150,23 @@ AUTH_PASSWORD_VALIDATORS = [
 # DATE_INPUT_FORMATS = ('%d-%m-%Y','%Y-%m-%d')
 
 LANGUAGE_CODE = 'en-us'
+
 TIME_ZONE = 'UTC'
-# USE_I18N = True
+
+USE_I18N = True
+
 USE_L10N = True
+
 USE_TZ = True
+
+
+# LANGUAGES = (
+#     ('en', 'English'),
+#     ('pt-br', 'Portuguese'),
+#     ('es', 'Spanish')
+# )
+
+# LOCALE_PATHS = (PROJECT_DIR.child('locale'), )
 
 IPRESTRICT_GEOIP_ENABLED = False
 
