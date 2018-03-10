@@ -20,7 +20,7 @@ DATABASES = {
         'NAME': PROJECT_DIR.child('db.sqlite3'),
     }
 } 
-ALLOWED_HOSTS = ['.weekendofcodes.herokuapp.com']   
+ALLOWED_HOSTS = ['*']   
 
 #for local
 
