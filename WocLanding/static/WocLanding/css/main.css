@@ -839,6 +839,7 @@ fieldset[disabled] .btn {
   text-align: left;
   float: none;
   margin-bottom: 34px;
+  /*width: 250px;*/
 }
 .column-1 .nav-pills li a {
   background: #dddddd;
@@ -889,7 +890,7 @@ fieldset[disabled] .btn {
   color: #777777;
   border-radius: 0px;
   padding: 7px 10px;
-  width: 120px;
+  width: 200px;
   display: block;
   text-align: center;
 }
@@ -913,6 +914,7 @@ fieldset[disabled] .btn {
   background: #efefef;
   padding: 34px 30px;
   margin-bottom: 42px;
+  margin-left: 42px;
 }
 .board .member h4 {
   font-size: 20px;
@@ -927,6 +929,7 @@ fieldset[disabled] .btn {
 }
 .board .member .bg-2 {
   background: #03a8f3;
+  width: 200px;
 }
 .board .member .bg-3 {
   background: #2239c2;
@@ -977,7 +980,7 @@ fieldset[disabled] .btn {
   text-align: center;
 }
 #gallery .more-btn .btn {
-  margin-top: 30px;
+  margin-top: 30px; 
 }
 .gallery-item {
   position: relative;
