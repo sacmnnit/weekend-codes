@@ -13,7 +13,7 @@ $('.send_message').typeIt({
 
 $('.type_slider').typeIt({  
   speed: 100,
-  autoStart: false,
+  // autoStart: false,
 });
 
 $('.type_why_woc').typeIt({  
