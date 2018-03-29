@@ -857,6 +857,7 @@ fieldset[disabled] .btn {
   margin: 48px 35px;
   position: relative;
 }
+
 .column-1 .nav-pills ul li:after {
   position: absolute;
   content: "";
@@ -893,7 +894,9 @@ fieldset[disabled] .btn {
   width: 200px;
   display: block;
   text-align: center;
+  cursor: pointer;
 }
+
 .board {
   padding: 60px 60px 30px;
 }
