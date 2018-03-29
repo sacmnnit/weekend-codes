@@ -23,7 +23,7 @@ $('.type_why_woc').typeIt({
 
 $('.type_why_woc_after').typeIt({  
   speed: 200,
-  startDelay:9000,
+  startDelay:7000,
   autoStart: false,
 });
 
