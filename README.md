@@ -2,6 +2,8 @@
 
 <strong>Weekend Of Code</strong> - WOC is a joint initiative of B.Tech final and pre-final year students to provide the freshers an exposure to the world of competitive programming alongwith a glimpse of software development.<br>
 
+<a href="https://weekendofcodes.herokuapp.com">Check our site</a> 
+
 
 <img src="./WocLanding/static/WocLanding/img/slider/bg-1.jpg"></img>
 
@@ -25,4 +27,6 @@ Why WOC ?
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 -->
-Contact team - hackathon@mnnit.ac.in
+Contact Woc team : 
+<br><strong>hackathon@mnnit.ac.in</strong>
+<br><strong>wocmnnit@gmail.com</strong>
