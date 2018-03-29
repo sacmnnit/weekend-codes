@@ -27,6 +27,6 @@ Why WOC ?
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 -->
-Contact Woc team : 
+<h3>Contact Woc team </h3> 
 <br><strong>hackathon@mnnit.ac.in</strong>
 <br><strong>wocmnnit@gmail.com</strong>
