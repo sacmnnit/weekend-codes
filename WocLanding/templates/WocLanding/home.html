@@ -53,11 +53,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img src="{% static 'WocLanding/img/logo-1_new.jpg' %}" alt=""></a>
+        <a class="navbar-brand" href="index.html">
+          <img src="{% static 'WocLanding/img/logo-1_new.jpg' %}" alt="">
+        </a>
       </div>
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="{% url 'home' %}">Home</a></li>
+        <li class="active"><a href="{% url 'home' %}">Live &nbsp; <i class="fas fa-circle fa-xs" style="color:green;"></i> </a></li>
           <li><a href="#event">About Us</a></li>
           <li><a href="#schedule">Schedule</a></li>
           <li><a href="#gallery">Gallery</a></li>
