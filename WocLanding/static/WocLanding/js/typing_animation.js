@@ -71,7 +71,13 @@ $('.type_event_registration').typeIt({
 // });
 
 $('.type_live').typeIt({  
-  speed: 50,
+  speed: 10,
+  loop:true,
+  // autoStart: false,
+});
+
+$('.type_live_main').typeIt({  
+  speed: 10,
   loop:true,
   // autoStart: false,
 });
