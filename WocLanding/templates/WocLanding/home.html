@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>  
 <html lang="en">
-<head>
+<head>  
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -162,7 +162,9 @@
       </div>
       <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.2s">
         <div class="time-countdown">
-        <div id="clock" class="time-count"></div>
+        <!-- <div id="clock" class="time-count"></div> -->
+        <span class="type_live">Live @</span><br>
+        <div class="time-count"><h2 style="display:inline;">Day 1 (Kick-Start) </h2><i class="fas fa-circle" style="color:green; padding: 3px"></i></div>
         </div>
       </div>
     </div>
@@ -290,7 +292,7 @@
   <div class="main-board wow fadeInDown" data-wow-delay="0.3s">
 
   <ul class="nav nav-tabs day center" role="tablist">
-    <li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab"> DEVJAM <br> <span>Development Event</span></a></li>
+    <li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab"> DEVJAM <i class="fas fa-circle" style="color:green; padding: 3px"></i><br> <span>Development Event</span></a></li>
     <li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">CodeStart <br> <span>Coding Event</span> </a></li>
    <!-- <li role="presentation"><a href="#day3" aria-controls="day3" role="tab" data-toggle="tab">M 31st <br> <span>DAY 03</span></a></li>
     <li role="presentation"><a href="#day4" aria-controls="day4" role="tab" data-toggle="tab">A 1st <br> <span>DAY 04</span></a></li> -->
@@ -305,7 +307,7 @@
   <ul class="nav nav-pills event-time-list">
     <li><a>DAY</a>
     <ul>
-      <li class="color-1"><a >APRIL 01<br>DevJam kickstarts</a></li>
+      <li class="color-1"><a >APRIL 01 <i class="fas fa-circle" style="color:green; padding: 3px"></i><br>DevJam kickstarts</a></li>
       <li class="color-2"><a >APRIL 03<br>Idea Submission</a></li>
       <li class="color-3"><a >APRIL 05<br>Mentor Evaluation:1</a></li>
       <li class="color-4"><a >APRIL 07<br>Mentor Evaluation:2</a></li>
@@ -618,8 +620,7 @@
     <a href="https://www.stickermule.com/">
     <img src="{% static 'WocLanding/sponsors/sticker_mule.png' %}" alt="" style="max-height: 300px; max-width:200px;">
   </a>
-    </div>
-  </div>
+  
 
   <div class="col-md-3 col-sm-6 col-xs-12">
     <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.2s">

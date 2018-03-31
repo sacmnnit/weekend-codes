@@ -57,16 +57,23 @@ $('.type_event_time').typeIt({
   autoStart: false,
 });
 
-$('.type_event_speakers').typeIt({  
-  speed: 100,
-  startDelay: 4500,
-  autoStart: false,
-});
 
 $('.type_event_registration').typeIt({  
   speed: 100,
-  startDelay: 6500,
+  startDelay: 4000,
   autoStart: false,
+});
+
+// $('.type_event_speakers').typeIt({  
+//   speed: 100,
+//   startDelay: 4500,
+//   autoStart: false,
+// });
+
+$('.type_live').typeIt({  
+  speed: 100,
+  loop:true,
+  // autoStart: false,
 });
 
 // $('.type_devjam').typeIt({  
