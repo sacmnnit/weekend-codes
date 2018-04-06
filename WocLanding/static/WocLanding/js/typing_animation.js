@@ -16,6 +16,12 @@ $('.type_slider').typeIt({
   // autoStart: false,
 });
 
+$('.codestart').typeIt({  
+  speed: 100,
+  loop:true,
+  // autoStart: false,
+});
+
 $('.type_why_woc').typeIt({  
   speed: 100,
   autoStart: false,
