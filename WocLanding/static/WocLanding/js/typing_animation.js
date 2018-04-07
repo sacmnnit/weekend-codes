@@ -16,12 +16,6 @@ $('.type_slider').typeIt({
   // autoStart: false,
 });
 
-$('.codestart').typeIt({  
-  speed: 100,
-  loop:true,
-  // autoStart: false,
-});
-
 $('.type_why_woc').typeIt({  
   speed: 100,
   autoStart: false,
@@ -101,6 +95,17 @@ $('.type_live_main').typeIt({
 //   loop:true,
 //   autoStart: false,
 // });
+
+
+function live(){
+  while(true){
+    $(".codestart").hide();
+    sleep(100);
+    $(".codestart").show();
+  }
+}
+
+live();
 
 });
 
